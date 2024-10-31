@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BellaLingua</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="style/estilos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="sticky-top">
+      <!-- Encabezado -->
+      <header class="header" id="header">
+        <div class="container-fluid ps-md-5">
+          <div class="row ms-md-5 me-md-3">
+            <!-- Sección izquierda: Logo y nombre -->
+            <div class="col-6 col-md-5 header-left ms-md-4">
+              <img src="img/logo.png" alt="Logo BellaLingua" class="header-logo" />
+              <div>
+                <div class="header-title">BellaLingua</div>
+                <div class="header-subtitle ms-3">Scuola Di Lingue</div>
+              </div>
+            </div>
+            <!-- Sección derecha: Contacto -->
+            <div class="col-5 header-right mt-md-2 mt-3 ms-2">
+              <span class="header-mail">info@bellalingua.com</span><br />
+              <span class="header-phone">+34 615 077 801</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <button
+            class="btn btn-outline-secondary me-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-center">
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="inicio.html">HOME</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="inicio.html#about">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CURSOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cursos A1 y A2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="cursos.html"
+                      >Cursos B1 y B2</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Cursos C1 y C2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="formulario.html">INFORMATE</a>
+              </li>
+              <form class="d-flex mx-5" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  data-bs-toggle="tooltip"
+                >
+                  Search
+                </button>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Menú Offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h4
+          class="offcanvas-title text-center"
+          id="offcanvasWithBothOptionsLabel"
+        >
+          <b> MI CUENTA </b>
+        </h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p><a href="#" id="link-offcanva">INICIAR SESIÓN</a></p>
+        <br />
+        <p><a href="#" id="link-offcanva">REGÍSTRATE</a></p>
+      </div>
+      <div class="text-center mb-5 me-2">
+        <img
+          src="img/logo.png"
+          alt="BellaLingua"
+          class="img-fluid"
+          style="max-width: 70%; height: auto"
+        />
+      </div>
+    </div>
+    <!-- Carrusel -->
+    <div
+      id="carouselExample"
+      class="carousel slide d-block col-10 col-md-6 mx-auto mt-5 ps-xs-2"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <!-- Card 1 -->
+        <div class="carousel-item active">
+          <div class="card">
+            <img src="img/palabras.jpeg" class="d-block w-100" alt="Imagen 1" />
+            <div class="texto-superpuesto p-1 p-md-4 col-7 col-md-8">
+              <h2 class="xs-font-h2 mt-2">Palabras</h2>
+              <p class="xs-font-p">
+                En esta academia aprenderás las palabras más comunes en italiano
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="carousel-item">
+          <div class="card">
+            <img src="img/bandera.jpeg" class="d-block w-100" alt="Imagen 2" />
+            <div class="texto-superpuesto p-1 p-md-4 col-7 col-md-8">
+              <h2 class="xs-font-h2 mt-2">Bandera</h2>
+              <p class="xs-font-p">
+                Conocerás la bandera de Italia y su significado
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="carousel-item">
+          <div class="card">
+            <img src="img/paisaje.jpeg" class="d-block w-100" alt="Imagen 3" />
+            <div class="texto-superpuesto p-1 p-md-4 col-7 col-md-8">
+              <h2 class="xs-font-h2 mt-2">Paisaje</h2>
+              <p class="xs-font-p">
+                Conocerás los paisajes más hermosos de Italia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev custom-carousel-control ms-3"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next custom-carousel-control me-3"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Conócenos -->
+    <section class="home-section" id="about">
+      <div class="heading-about section-heading text-center mt-5">
+        <h1>Sobre nosotros</h1>
+        <i class="fa fa-2x fa-angle-down mt-2 flechita"></i>
+      </div>
+
+      <div class="container mt-4">
+        <div class="row justify-content-evenly gx-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+            <div class="fondo-card text-center p-3">
+              <h5>Francesca</h5>
+              <p class="subtitle">Profesora de A1 y A2</p>
+              <div class="avatar">
+                <img alt="" class="rounded-circle img-fluid" src="img/profe1.jpeg" />
+              </div>
+              <button
+                class="btn btn-primary mt-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#info1"
+                aria-expanded="false"
+              >
+                Más información
+              </button>
+              <div id="info1" class="collapse mt-2">
+                <p>
+                  Especialista en niveles básicos A1 y A2, Francesca es paciente
+                  y dedicada a construir una base sólida en sus estudiantes. Su
+                  enfoque es interactivo, centrándose en el vocabulario
+                  cotidiano, la pronunciación y frases esenciales para la vida
+                  diaria. Le encanta utilizar juegos y actividades visuales para
+                  que el aprendizaje sea ameno y accesible.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+            <div class="fondo-card text-center p-3">
+              <h5>Balotelli</h5>
+              <p class="subtitle">Profesor de B1 y B2</p>
+              <div class="avatar">
+                <img alt="" class="rounded-circle img-fluid" src="img/profe2.jpeg" />
+              </div>
+              <button
+                class="btn btn-primary mt-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#info2"
+                aria-expanded="false"
+              >
+                Más información
+              </button>
+              <div id="info2" class="collapse mt-2">
+                <p>
+                  Profesor para los niveles intermedios B1 y B2, Balotelli es
+                  conocido por su energía y dinamismo en clase. Se enfoca en
+                  ayudar a sus estudiantes a ganar fluidez en conversaciones,
+                  ampliando su gramática y vocabulario. A través de debates y
+                  simulaciones, busca que sus alumnos puedan desenvolverse con
+                  mayor confianza en situaciones reales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+            <div class="fondo-card text-center p-3">
+              <h5>Antonella</h5>
+              <p class="subtitle">Profesora de C1 y C2</p>
+              <div class="avatar">
+                <img alt="" class="rounded-circle img-fluid" src="img/profe3.jpeg" />
+              </div>
+              <button
+                class="btn btn-primary mt-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#info3"
+                aria-expanded="false"
+              >
+                Más información
+              </button>
+              <div id="info3" class="collapse mt-2">
+                <p>
+                  Profesora de niveles avanzados C1 y C2, Antonella se dedica a
+                  perfeccionar la competencia lingüística de sus alumnos. Su
+                  metodología incluye el análisis de textos complejos, debates
+                  sobre temas de actualidad y prácticas de escritura avanzada.
+                  Es muy exigente, pero sabe motivar a sus estudiantes para que
+                  alcancen un nivel profesional en el idioma.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center text-lg-start mt-3 fondo-footer">
+      <div class="container p-4">
+        <div class="row mt-4">
+          <!-- REDES SOCIALES-->
+          <div class="col-lg-4 col-md-12">
+            <h5 class="mb-4">REDES SOCIALES</h5>
+            <!--BUTTONS REDES SOCIALES-->
+            <div class="mt-4 ms-1">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-fb btn-floating m-1" href="#!" role="button"
+                  ><i class="fa-brands fa-facebook"></i>
+                </a>
+                <!-- Twitter -->
+                <a class="btn btn-tw btn-floating m-1" href="#!" role="button"
+                  ><i class="fa-brands fa-twitter"></i>
+                </a>
+                <!-- Google -->
+                <a class="btn btn-gg btn-floating m-1" href="#!" role="button"
+                  ><i class="fa-brands fa-google"></i>
+                </a>
+                <!-- Instagram -->
+                <a class="btn btn-ig btn-floating m-1" href="#!" role="button"
+                  ><i class="fa-brands fa-instagram"></i>
+                </a>
+                <!-- Linkedin -->
+                <a class="btn btn-li btn-floating m-1" href="#!" role="button"
+                  ><i class="fa-brands fa-linkedin"></i>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-gh btn-floating m-1" href="#!" role="button"
+                  ><i class="fa-brands fa-github"></i>
+                </a>
+              </section>
+            </div>
+          </div>
+          <!--ENCUENTRANOS-->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="mb-4">ENCUENTRANOS</h5>
+            <div class="form-outline form-white mb-4">
+              <div class="form-notch">
+                <div class="form-notch-leading"></div>
+                <div class="form-notch-middle"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
+            </div>
+            <ul class="fa-ul">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span
+                ><span class="ms-2">Calle Caligula 5</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span
+                ><span class="ms-2">info@bellalingua.es</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span
+                ><span class="ms-2">+34 615 077 801</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5 class="mb-4">HORARIO</h5>
+            <div class="row">
+              <div class="col-6 text-center">
+                <p>LUNES - VIERNES</p>
+              </div>
+              <div class="col-5 text-center">
+                <p>10:00 - 21:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 color-fondo">BELLA LINGUA ACCADEMIA</div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onscroll = function () {
+        const header = document.getElementById("header");
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          header.classList.add("shrink");
+        } else {
+          header.classList.remove("shrink");
+        }
+      };
+    </script>
+  </body>
+</html>
